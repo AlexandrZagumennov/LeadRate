@@ -5,7 +5,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>LeadRate</title>
+
+	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,53 +19,64 @@
 
 <body>
 	<main class="main">
-		<section class="todo">
-			<div class="container">
+		<div class="container">
+			<div class="todo">
 				<div class="todo__row">
 					<h1 class="todo__title">Todo list</h1>
 					<button class="todo__add-btn">Add</button>
 				</div>
-
+	
 				<ul class="todo__list">
 					<li class="todo__item">
 						<label class="todo__label checkbox">
-							<input type="checkbox">
+							<input type="checkbox" class="checkbox__input">
 							<span class="checkbox__title">delectus aut autem</span>
 							<span class="checkbox__description">laboriosam mollitia et enim quasi adipisci quia provident illum</span>
 						</label>
 					</li>
-
+	
 					<li class="todo__item">
 						<label class="todo__label checkbox">
-							<input type="checkbox">
+							<input type="checkbox" class="checkbox__input">
 							<span class="checkbox__title">quo laboriosam deleniti aut qui</span>
 							<span class="checkbox__description"></span>
 						</label>
 					</li>
-
+	
 					<li class="todo__item">
 						<label class="todo__label checkbox">
-							<input type="checkbox">
+							<input type="checkbox" class="checkbox__input" checked>
 							<span class="checkbox__title">laboriosam mollitia et enim quasi adipisci quia provident illum</span>
 							<span class="checkbox__description"></span>
 						</label>
 					</li>
-
+	
 					<li class="todo__item">
 						<label class="todo__label checkbox">
-							<input type="checkbox">
+							<input type="checkbox" class="checkbox__input">
 							<span class="checkbox__title">repellendus sunt dolores architecto voluptatum</span>
 							<span class="checkbox__description">accusamus eos facilis sint et aut voluptatem</span>
 						</label>
 					</li>
+
+					<li class="todo__item">
+						<label class="todo__label checkbox">
+							<input type="checkbox" class="checkbox__input">
+							<span class="checkbox__title">repellendus sunt dolores architecto voluptatum</span>
+							<span class="checkbox__description">accusamus eos facilis sint et aut voluptatem</span>
+						</label>
+					</li>
+
 				</ul>
 			</div>
-		</section>
+		</div>
 	</main>
 
 	<footer class="footer">
 		<div class="container">
-			<p class="footer__copy">© 2022. Author Name</p>
+			<div class="footer__row">
+				<p class="footer__copy">© 2022. Author Name</p>
+			</div>
 		</div>
 	</footer>
 </body>

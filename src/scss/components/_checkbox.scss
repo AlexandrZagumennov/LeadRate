@@ -1,0 +1,87 @@
+.checkbox {
+  position: relative;
+  display: block;
+  padding: 9px 0 9px 35px;
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+}
+
+.checkbox:hover .checkbox__title {
+    color: $accent-color;
+}
+
+.checkbox:hover .checkbox__input::before {
+    background-color: rgba(255, 132, 105, 0.2);
+}
+
+.checkbox__title {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  transition: all .3s ease-in-out;
+}
+
+.checkbox__description {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f5565;
+}
+
+.checkbox__input {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    background-color: #4f5565;
+    cursor: pointer;
+    transition:  background-color .3s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    height: 6px;
+    width: 11px;
+    border: 3px solid $main-content-color;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &:checked::after {
+    opacity: 1;
+  }
+
+  &:checked::before,
+  &:hover:checked::before {
+    background-color: $accent-color;
+  }
+}
+
+.checkbox__input:checked ~ .checkbox__title{
+    text-decoration-line: line-through;
+    color: #4F5565
+}
+
+.checkbox__input:hover:checked ~ .checkbox__title{
+    color: $main-content-color;
+}

@@ -1,0 +1,16 @@
+.footer {
+    min-height: 257px;
+}
+
+.footer__row {
+    display: flex;
+}
+
+.footer__copy {
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #414B62;
+}
