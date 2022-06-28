@@ -14,4 +14,5 @@
 - кастомные скроллбар и полоса прокрутки.
 
 ### Ссылка на сайт:  
-https://alexandrzagumennov.github.io/LeadRate./dist/index.html
+https://alexandrzagumennov.github.io/LeadRate/dist/index.html
+
