@@ -11,7 +11,7 @@
   &:before {
     display: block;
     content: "";
-    width: 330px;
+    width: 83.12%;
     height: 111px;
     position: absolute;
     top: -32px;
@@ -56,4 +56,11 @@
 .todo__list {
     max-height: 455px;
     overflow: auto;
+}
+
+
+@media (min-width: 768px) {
+    .todo {
+        max-width: 420px;
+    }
 }
